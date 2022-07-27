@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.container{
+    background-color: #16172b;
+    width: 100%;
+    height: 100vh;
+}
+.container .cards-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 30px;
+}
+.card{
+    position: relative;
+    max-width: 330px;
+    box-shadow: 0px 0px 12px black;
+    border-radius: 22px;
+    overflow: hidden;
+    padding: 25px;
+    min-height: 540px;
+}
+.card .imagen{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;    background-position: center;
+    left: 0;
+    transition: .5s ease;
+}
+.card .imagen img{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    transition: .5s ease;
+    filter: brightness(60%);
+}
+.card:hover .imagen img{
+    background: rgba(0, 0, 0, 0.534);
+    transform: scale(1.1);
+    transition: .5s ease;
+    filter: brightness(100%);
+}
+
+
+.card .date-container{
+    display: flex;
+    margin-bottom: 120px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+.card .date-container .date p{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(255,255,255,0.5);
+}
+.card .date-container .social-media{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+.card .date-container .social-media ion-icon{
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-shadow: 0px 0px 5px black;
+}
+.card .date-container .social-media .span{
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 11px;
+    text-shadow: 0px 0px 5px black;
+    transition: all .5s ease;
+}
+.card .date-container .social-media .span span{
+    font-size: 0.80rem;
+    text-shadow: 0px 0px 5px black;
+
+}
+.card:hover .date-container .social-media .span{
+    opacity: 1;
+    transition: .5s ease;
+    transform: translateY(-14px);
+}
+.card .info-container{
+    position: relative;
+    top: 262px;
+    pointer-events: none;
+    transition: all .5s ease;
+}
+.card h2{
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 300;
+    text-shadow: 0px 0px 20px black;
+}
+.card h1{
+    font-size: 2.0rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: white;
+    text-shadow: 2px 4px 5px black;
+}
+.card p{
+    color: white;
+    font-size: 1rem;
+    line-height: 20px;
+    text-shadow: 2px 2.2px 1.8px black;
+}
+
+#card2 h1{
+    font-size: 1.79rem;
+}
+
+#card3 h1{
+    font-size: 2.3rem;
+}
+
+.card:hover .info-container{
+    top: 100px;
+    transition: all .5s ease;
+}
+.card .info-container .btn{
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    pointer-events: all;
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    text-shadow: 2px 3px 3px black;
+    font-size: 1.1rem;
+    position: relative;
+    transition: .3s linear;
+}
+.card .info-container .btn:hover{
+    letter-spacing: 2.5px;
+    transition: .3s linear;
+}
+.card .info-container .btn ion-icon{
+    position: absolute;
+    top: 0px;
+    right: -20px;
+    opacity: 0;
+    transition: .3s linear;
+}
+.card .info-container .btn:hover ion-icon{
+    transition: .2s ease;
+    opacity: 1;
+}
+
+
+
