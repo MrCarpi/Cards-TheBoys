@@ -132,6 +132,7 @@
     font-size: 2.3rem;
 }
 
+
 .card:hover .info-container{
     top: 100px;
     transition: all .5s ease;
@@ -147,10 +148,11 @@
     text-align: center;
     display: block;
     margin: 10px auto;
-    text-shadow: 2px 3px 3px black;
+    text-shadow: 2px 2px 2px black;
     font-size: 1.1rem;
     position: relative;
     transition: .3s linear;
+    top: 18px;
 }
 .card .info-container .btn:hover{
     letter-spacing: 2.5px;
@@ -167,6 +169,7 @@
     transition: .2s ease;
     opacity: 1;
 }
+
 
 
 
